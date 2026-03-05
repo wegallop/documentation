@@ -1,0 +1,142 @@
+---
+title: 'Proposals'
+description: 'Track and manage proposals across all projects'
+icon: 'file-signature'
+---
+
+The Proposals section shows all proposals from across your organization and reflects how proposals actually work inside each project. Use it to understand pipeline, status, and performance, then drill into individual proposals for details.
+
+Most proposal creation and editing happens inside a specific project. This page focuses on how proposals behave and what you can expect to see.
+
+## Proposal basics
+
+A proposal in Gallop is a rich, canvas‑based document used for both estimating and contracting. Each proposal includes:
+
+- **Settings & identity** — Who it is for, who prepared it, and how long it is valid.
+- **Financial configuration** — How prices are calculated and shown to the client.
+- **Canvas content** — Drag‑and‑drop blocks for items, contingencies, images, text, terms, prices, and signatures.
+- **Review workflow** — Optional internal approvals before publishing.
+- **Client experience** — A clear, client‑facing view and signing flow on web and mobile.
+
+## Settings and identity
+
+Each proposal has core identity fields:
+
+- **Title and subtitle** — How you and the client recognize the proposal.
+- **Reference number and date** — Internal tracking and recordkeeping.
+- **Preparer** — The team member who owns the document.
+- **Cover image and layout** — How the cover page appears to clients.
+- **Validity** — \"Valid for\" (in days) and calculated expiration date.
+- **Estimated duration** — High‑level project duration with units (for example, weeks or months).
+- **Addresses** — Project and communication addresses, pulled from the project.
+- **Client signatories** — Which clients will be asked to sign.
+
+These settings appear at the top of the builder view and in the header section of the client‑facing document.
+
+## Financial configuration
+
+Proposals support flexible pricing strategies:
+
+- **Pricing method**
+  - **Detailed** — Markup or margin can be applied per item.
+  - **Aggregate** — Markup or margin is applied at the proposal level.
+- **Grouping and visibility**
+  - Group by category for a more organized client view.
+  - Control whether fixed‑price values are visible to the client at the proposal and item level.
+- **Allowances**
+  - Decide whether allowance items show the **budget** value or **price** value to the client.
+- **Margin targeting**
+  - Compare expected margin on the proposal to project‑level or org‑level target margins.
+  - Use the floating gutter summary to see budget, margin, subtotal, tax, and price as you edit.
+
+Use these controls to balance internal estimating needs with how much detail you want to expose to clients.
+
+## Canvas and block system
+
+Proposals are built using a canvas made up of blocks. You can drag blocks around, insert new ones, or switch to spreadsheet/bulk‑edit views for faster editing.
+
+Common block types include:
+
+- **Section block** — A container for grouping other blocks. Sections can be linked to categories for auto‑titling and can be duplicated, moved, restricted, or excluded.
+- **Item block** — The core estimating block. Items can:
+  - Be created from scratch or pulled from the **Catalogue**.
+  - Include cost codes, categories, assumptions with tokens, quantity/units/rate, and budget type (fixed or allowance).
+  - Automatically generate selections when approved.
+  - Sync with catalogue items or collections, with diffing when values diverge.
+- **Contingency block** — A calculated block that derives its value from other items using filters (by item, category, or cost code). You can calculate based on cost or price and use flat percentages or rate tables.
+- **Text block** — WYSIWYG text for scope descriptions and explanations. Text blocks can sync to the Text Catalogue for centralized updates.
+- **Image block** — One or more images, often pulled from the Image Catalogue, rendered in a way that looks good in the final document.
+- **Price block** — A summary of pricing that includes payment instructions and a payment schedule utility for upfront or amortized billing.
+- **Terms block** — Standard terms of business linked to the Terms Catalogue, with editing controlled by elevated permissions.
+- **Signature block** — Signature fields for builder and client signatories, with AND/OR logic for more complex signing arrangements.
+
+You can mix and match these blocks to fit different project types and scopes.
+
+## Block controls
+
+Most blocks support powerful meta‑controls:
+
+- **Inclusion** — Toggle blocks in or out of a proposal. Excluded blocks stay on the canvas for internal use but do not appear on the client‑facing version.
+- **Visibility** — Mark blocks as internal‑only so they carry financial or budget data without showing to clients.
+- **Restriction** — Lock blocks so only users with higher permissions can edit them. This is useful for template enforcement and standard language.
+- **Tokens** — Use tokens to insert dynamic values (for example, org, project, proposal, or item fields) into text so content stays up to date automatically.
+
+These controls make it easy to build templates that can be tailored quickly for each job.
+
+## Coaching notes
+
+Coaching notes are a flagship collaboration feature on the proposal canvas. They behave like comment/to‑do annotations:
+
+- Add notes to any block or section.
+- Create multiple notes per block and navigate them from a gutter‑based list.
+- Resolve and reopen notes, with full attribution of who created, resolved, or reopened them.
+
+Teams use coaching notes during estimating, internal review, and QA before sending proposals to clients.
+
+## Preflight checklist
+
+Before publishing, each proposal runs through a preflight checklist that surfaces:
+
+- **Red flags** — Errors that block submission (for example, missing signatories, broken catalogue links).
+- **Orange flags** — Warnings you need to acknowledge (for example, below‑target margin, missing attachments).
+- **Yellow flags** — Open coaching notes that you may choose to clear before sending.
+- **Blue flags** — Catalogue diffs where proposal items differ from their linked catalogue items.
+
+This helps ensure proposals are complete, compliant, and financially sound before clients see them.
+
+## Review workflow and publishing
+
+Organizations can configure multi‑step approval workflows in settings. A typical workflow might:
+
+1. Route the proposal to a manager group for review.
+2. Then require accounting or leadership approval above certain thresholds.
+3. Finally allow the preparer to publish.
+
+Each step:
+
+- Can require one or all approvers.
+- Generates tasks in the assignees’ **Task Inbox**.
+- Allows reviewers to use coaching notes and other tools to request changes.
+
+Once approved, you can:
+
+- Preview the client‑facing email and proposal.
+- Add a custom message and CC additional recipients.
+- Publish the proposal so clients can review and sign on web or mobile.
+
+The proposal tracks:
+
+- Client viewing and signing activity.
+- Reminder triggers and expiration management.
+- Cancellations and archiving.
+
+## Organization-wide view
+
+From this Proposals page you can:
+
+- See all proposals across projects.
+- Filter by project, client, status, preparer, or date.
+- Monitor conversion rates and time to signature.
+- Drill into any proposal to view its full content and status.
+
+Use this view together with project‑level contracting screens to manage both day‑to‑day work and organization‑wide performance.

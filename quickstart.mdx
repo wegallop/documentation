@@ -1,80 +1,145 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Set up Gallop for your organization and send your first proposal"
 ---
 
-## Get started in three steps
+## Overview
 
-Get your documentation site running locally and make your first customization.
+This guide walks you through setting up Gallop for a new builder organization and getting to your first client‑facing proposal. You will configure your org, invite your team, build your catalogue, create a project, and invite your client to the Client Portal.
 
-### Step 1: Set up your local environment
+You can complete these steps in one sitting or spread them over a few sessions. Your progress is saved as you go.
+
+## Step 1: Configure your organization
+
+Start in the **Builder Portal**.
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+  <Accordion icon="building" title="Set your business profile and branding">
+    1. Go to **Settings → Business**.
+    2. Add your legal and operating names, business numbers, and contact details.
+    3. Upload your logo, icon, and a banner image for your branded login experience.
+    4. Confirm your currency, tax details, and date format.
+
+    This information appears on proposals, change orders, invoices, and client‑facing views.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+  <Accordion icon="sliders" title="Configure core lists and taxonomy">
+    1. Go to **Settings → Configuration**.
+    2. Define your **project stages** and **project types**.
+    3. Add **project phases** you use on schedules.
+    4. Set up **cost codes**, **rooms**, **categories**, **job titles**, and **departments**.
+    5. Create **billing accounts**, **payment methods**, **tags**, and **groups** that match your org.
+
+    These lists power projects, financials, and catalogue content across Gallop.
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+## Step 2: Set up users, groups, and permissions
+
+Gallop uses a two‑tier permission model: org‑level roles and elevated permissions plus project‑level roles and a permission matrix.
 
 <AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
-
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
+  <Accordion icon="user-group" title="Invite your core team">
+    1. Go to **Users** in the Builder Portal.
+    2. Click **Invite user** and enter each team member’s email address.
+    3. Assign an **Org Role** (typically **Admin** for owners/ops and **Member** for most staff).
+    4. Add each user to the appropriate **Groups** (e.g., Project Managers, Designers, Accounting).
+  </Accordion>
+  <Accordion icon="shield-halved" title="Configure elevated permissions">
+    1. From **Settings**, review your permission model (Project Management, Client Management, Accounting Management, Indirects Visibility, Catalogue Management, Legal Management, Template Management, Contract Management).
+    2. Decide which elevated permissions each role or group should have.
+    3. Apply permissions at the group level where possible so new users inherit the right access automatically.
   </Accordion>
 </AccordionGroup>
 
-### Step 3: Go live
+## Step 3: Build your catalogue
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+Your catalogue is the reusable library that powers proposals, selections, and templates.
 
-## Next steps
+<AccordionGroup>
+  <Accordion icon="box" title="Create items and collections">
+    1. Go to **Catalogue → Items**.
+    2. Add items for your most common scopes (e.g., design time, documentation, finishes packages).
+    3. For each item, set cost codes, categories, assumptions, and pricing defaults.
+    4. Create **Collections** for packaged options (for example, good/better/best kitchen options).
+  </Accordion>
+  <Accordion icon="image" title="Add images and text blocks">
+    1. Go to **Catalogue → Images** and upload product and inspiration photos.
+    2. Tag images so they are easy to reuse in proposals and selections.
+    3. Go to **Catalogue → Text** to create reusable scope descriptions and educational content.
+    4. In **Catalogue → Terms**, add your standard terms of business for proposals and change orders.
+  </Accordion>
+</AccordionGroup>
 
-Now that you have your docs running, explore these key features:
+## Step 4: Create your first project
+
+With your org configured and catalogue in place, create a real project.
+
+<AccordionGroup>
+  <Accordion icon="folder" title="Set up the project shell">
+    1. Go to **Projects** and click **New project**.
+    2. Enter the project title, subtitle (optional), and account number if you use one.
+    3. Add the project address and (if different) a communication address.
+    4. Select project type, stage, and tags.
+    5. Add an approximate project value and renovated area if applicable.
+  </Accordion>
+  <Accordion icon="gear" title="Configure project settings">
+    1. Open the project and go to **Project settings**.
+    2. Confirm project dates (expected start/completion) and payment terms.
+    3. Choose which client‑facing modules you want to enable (Financials, Requests, Schedule, etc.).
+    4. Configure default markup/margin, allowance handling rules, and payment instructions.
+    5. Review warranty settings and note any special warranty terms.
+  </Accordion>
+</AccordionGroup>
+
+## Step 5: Add clients and invite them
+
+<AccordionGroup>
+  <Accordion icon="users" title="Create client records">
+    1. Go to **Clients** and click **New client**.
+    2. Add individual and, if relevant, company or family information.
+    3. Associate the client with your new project as a **Member** or **Contributor**.
+    4. Optionally, group related people using **Family** or **Company** entities so they share access correctly.
+  </Accordion>
+  <Accordion icon="envelope" title="Invite clients to the Client Portal">
+    1. From the project’s **Clients** tab, choose which clients should have portal access.
+    2. Send invitations when you are ready for them to review proposals, make selections, or see financials.
+    3. Adjust access at any time by revoking or restoring portal access without losing project history.
+  </Accordion>
+</AccordionGroup>
+
+## Step 6: Create and send your first proposal
+
+<AccordionGroup>
+  <Accordion icon="file-signature" title="Draft the proposal">
+    1. From your project, go to **Contracting → Proposals** and click **New proposal**.
+    2. Fill in the proposal settings: title, subtitle, reference number, dates, preparer, and cover image.
+    3. Choose your pricing method (detailed vs aggregate) and configure visibility and allowance settings.
+    4. Use your **Catalogue** items, collections, text blocks, images, and terms to build the canvas.
+    5. Add a **Price** block and, if needed, a payment schedule.
+  </Accordion>
+  <Accordion icon="circle-check" title="Review and publish">
+    1. Work through the preflight checklist and clear any red or orange flags.
+    2. Use coaching notes with your team to resolve open questions.
+    3. Start the approval workflow if your org requires internal review.
+    4. When ready, publish the proposal and send it to your client from within Gallop.
+  </Accordion>
+</AccordionGroup>
+
+## What’s next?
+
+Once you have your first project and proposal in place, explore:
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="Project financials" icon="chart-line" href="/builder-portal/financials">
+    Learn how project accounting, cost reports, and client financials work together.
+  </Card>
+  <Card title="Selections and decisions" icon="clipboard-check" href="/client-portal/hub/decisions">
+    See how clients review selections, tasks, and proposals in the Hub.
+  </Card>
+  <Card title="Schedule and briefings" icon="calendar" href="/client-portal/schedule">
+    Use the schedule, phases, milestones, and briefings to keep everyone aligned.
+  </Card>
+  <Card title="Catalogue best practices" icon="book" href="/builder-portal/catalogue">
+    Get more leverage from reusable items, collections, images, and terms.
+  </Card>
 </CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>

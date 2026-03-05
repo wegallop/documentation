@@ -1,122 +1,174 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+	"$schema": "https://mintlify.com/docs.json",
+	"theme": "mint",
+	"name": "Gallop Docs",
+	"colors": {
+		"primary": "#FF4800",
+		"light": "#FF4800",
+		"dark": "#FF4800"
+	},
+	"favicon": "/favicon.svg",
+	"navigation": {
+		"tabs": [
+			{
+				"tab": "Client Portal",
+				"groups": [
+					{
+						"group": "Overview",
+						"pages": ["client-portal/index"]
+					},
+					{
+						"group": "Hub",
+						"pages": [
+							"client-portal/hub/index",
+							"client-portal/hub/decisions",
+							"client-portal/hub/requests",
+							"client-portal/hub/warranty-requests",
+							"client-portal/hub/logs",
+							"client-portal/hub/team"
+						]
+					},
+					{
+						"group": "Schedule",
+						"pages": [
+							"client-portal/schedule/index",
+							"client-portal/schedule/overview",
+							"client-portal/schedule/critical-path",
+							"client-portal/schedule/briefings"
+						]
+					},
+					{
+						"group": "Financials",
+						"pages": [
+							"client-portal/financials/index",
+							"client-portal/financials/statement",
+							"client-portal/financials/payment-schedule",
+							"client-portal/financials/allowances"
+						]
+					},
+					{
+						"group": "Files & Messages",
+						"pages": ["client-portal/files", "client-portal/messages"]
+					}
+				]
+			},
+			{
+				"tab": "Builder Portal",
+				"groups": [
+					{
+						"group": "Overview",
+						"pages": ["builder-portal/index"]
+					},
+					{
+						"group": "Projects",
+						"pages": ["builder-portal/projects/index", "builder-portal/projects/project-settings"]
+					},
+					{
+						"group": "Inbox",
+						"pages": [
+							"builder-portal/inbox/index",
+							"builder-portal/inbox/messages",
+							"builder-portal/inbox/tasks"
+						]
+					},
+					{
+						"group": "Clients",
+						"pages": ["builder-portal/clients/index"]
+					},
+					{
+						"group": "Contracting",
+						"pages": [
+							"builder-portal/contracting/index",
+							"builder-portal/contracting/proposals",
+							"builder-portal/contracting/change-orders"
+						]
+					},
+					{
+						"group": "Financials",
+						"pages": [
+							"builder-portal/financials/index",
+							"builder-portal/financials/dashboard",
+							"builder-portal/financials/transactions",
+							"builder-portal/financials/payment-schedules",
+							"builder-portal/financials/cost-reports",
+							"builder-portal/financials/balances"
+						]
+					},
+					{
+						"group": "Requests",
+						"pages": [
+							"builder-portal/requests/index",
+							"builder-portal/requests/change-requests",
+							"builder-portal/requests/warranty-requests"
+						]
+					},
+					{
+						"group": "Catalogue",
+						"pages": [
+							"builder-portal/catalogue/index",
+							"builder-portal/catalogue/items",
+							"builder-portal/catalogue/images",
+							"builder-portal/catalogue/collections",
+							"builder-portal/catalogue/terms",
+							"builder-portal/catalogue/text"
+						]
+					},
+					{
+						"group": "Templates",
+						"pages": [
+							"builder-portal/templates/index",
+							"builder-portal/templates/proposals",
+							"builder-portal/templates/change-orders",
+							"builder-portal/templates/selections",
+							"builder-portal/templates/tasks"
+						]
+					},
+					{
+						"group": "Administration",
+						"pages": [
+							"builder-portal/users",
+							"builder-portal/settings/index",
+							"builder-portal/settings/account",
+							"builder-portal/settings/business",
+							"builder-portal/settings/configuration",
+							"builder-portal/settings/integrations"
+						]
+					}
+				]
+			},
+			{
+				"tab": "Release notes",
+				"groups": [
+					{
+						"group": "Releases",
+						"pages": ["release-notes/index"]
+					}
+				]
+			}
+		],
+		"global": {
+			"anchors": []
+		}
+	},
+	"logo": {
+		"light": "/logo/light.svg",
+		"dark": "/logo/dark.svg"
+	},
+	"navbar": {
+		"links": [],
+		"primary": {
+			"type": "button",
+			"label": "Log In",
+			"href": "https://gallop.build"
+		}
+	},
+	"contextual": {
+		"options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
+	},
+	"background": {
+		"color": {
+			"light": "#F8F7F3",
+			"dark": "#18191B"
+		}
+	}
 }

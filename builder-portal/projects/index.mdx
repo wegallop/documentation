@@ -1,0 +1,113 @@
+---
+title: 'Projects'
+description: 'Create and manage all your construction projects'
+icon: 'folder'
+---
+
+The Projects section is where you create, organize, and manage all your construction projects. Each project has its own dedicated workspace accessible through the Client Portal.
+
+Projects represent the full lifecycle of work — from prospective lead through active construction and into warranty and post‑warranty. You can safely create projects before they are won, keep them active through construction, and continue to use them for service work after handover.
+
+## Project views
+
+<CardGroup cols={2}>
+  <Card title="Active Projects" icon="folder-open" href="/builder-portal/projects/active">
+    Projects currently in progress
+  </Card>
+  <Card title="Archived Projects" icon="box-archive" href="/builder-portal/projects/archived">
+    Completed or inactive projects
+  </Card>
+</CardGroup>
+
+## Project list
+
+The project list displays all projects with key information:
+
+| Column | Description |
+|--------|-------------|
+| **Name** | Project name and address |
+| **Status** | Current project status |
+| **Stage** | Project stage (e.g., Pre-construction, Construction) |
+| **Team** | Assigned team members |
+| **Updated** | Last activity date |
+
+Depending on your configuration, you may also see:
+
+- **Type** — Project type (for example, new build, renovation, addition)
+- **Tags** — Custom tags you use for filtering and reporting
+- **Value** — High‑level project value
+
+## Project identity and classification
+
+Each project carries rich metadata that helps your team find, understand, and report on work:
+
+- **Title and subtitle** — How the project appears throughout Gallop.
+- **Account number** — Optional reference used in your internal systems.
+- **Type, status, and stage** — High‑level classification and lifecycle position.
+- **Tags** — Flexible labels you define in Configuration (for example, neighbourhood, product line, or sales region).
+- **Project address** — Physical site address.
+- **Communication address** — Optional alternate address for correspondence.
+- **Project value and renovated area** — Approximate value and size, using units of measure defined in Configuration.
+
+You set most of these fields when creating the project, and you can refine them later from project settings.
+
+## Creating a project
+
+To create a new project:
+
+1. Click **New Project**
+2. Enter the project details:
+   - Project name
+   - Address
+   - Client
+   - Project type
+   - Team members
+3. Configure project settings
+4. Save the project
+
+<Tip>
+Set up your project stages and types in Settings before creating projects. This ensures consistent categorization across your organization.
+</Tip>
+
+## Project settings
+
+Each project has configurable settings accessed from the project's settings page. Key sections include:
+
+- **Overview** — Core identity fields (title, subtitle, account number, addresses, tags).
+- **Team** — Assigned team members, their project roles (Lead or Support), and permission overrides.
+- **Clients** — Which clients are linked to the project and what they can see in the Client Portal.
+- **Security** — Access controls and visibility for sensitive information (for example, security details).
+- **Payment** — Payment terms, payment instructions, and invoice footer text that appear on client‑facing documents.
+- **Requests** — Whether clients can create change and warranty requests and how they flow to your team.
+- **Warranty** — Warranty eligibility, warranty dates, and a notes log that documents inclusions and exclusions.
+- **Financial** — Default markup/margin, allowance handling rules, and other accounting‑related settings.
+
+Admin‑level users can enable or disable specific client‑facing modules (Financials, Requests, Schedule, etc.) per project so the client experience matches the job.
+
+## Project stages and lifecycle
+
+Projects typically move through a configurable lifecycle. A common pattern is:
+
+| Stage | Description |
+|-------|-------------|
+| **Prospect** | Early lead or opportunity, often before a signed contract |
+| **Active** | Approved work in progress |
+| **Warranty** | Post‑completion period where you handle defects and service items |
+| **Post‑warranty** | Extended relationship beyond formal warranty (for example, ongoing service work) |
+| **Complete** | Fully closed project kept for history and reporting |
+
+You define the exact set of stages in **Settings → Configuration**, and can adapt them to your existing language (for example, Pre‑construction vs Prospect).
+
+## Archiving projects
+
+When a project is complete:
+
+1. Ensure all decisions are closed
+2. Verify all invoices are paid
+3. Archive the project from project settings
+
+Archived projects remain accessible for reference but are hidden from the active list.
+
+<Note>
+Archiving a project does not delete any data. You can restore archived projects if needed.
+</Note>

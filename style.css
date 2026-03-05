@@ -1,0 +1,4 @@
+/* Hide Mintlify footer (social links and "Powered by Mintlify") */
+footer {
+  display: none;
+}

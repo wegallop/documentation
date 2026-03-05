@@ -1,0 +1,138 @@
+---
+title: 'Users'
+description: 'Manage team members, roles, groups, and permissions'
+icon: 'user-group'
+---
+
+The Users section allows administrators to manage team members, their roles in the organization, and how they access projects. You control who can sign in, what they can see across the org, and what they can do on each project.
+
+<Note>
+The Users section is only available to administrators. Team members without admin access will not see this option.
+</Note>
+
+## User views
+
+Use the tabs to switch between:
+
+| View | Description |
+|------|-------------|
+| **Active** | Current team members with access |
+| **Archived** | Former team members preserved for history |
+| **Invites** | Pending invitations that have not been accepted |
+
+## User list
+
+The user list shows key information for each team member:
+
+| Column | Description |
+|--------|-------------|
+| **Name** | Team member name |
+| **Email** | Sign‑in email address |
+| **Org role** | Admin or Member |
+| **Groups** | Permission groups they belong to |
+| **Status** | Active, invited, or archived |
+
+## Adding team members
+
+To invite a new team member:
+
+1. Click **Invite user**.
+2. Enter their email address.
+3. Choose an **Org role** (Admin or Member).
+4. Assign them to one or more **Groups** (for example, Project Managers, Designers, Accounting).
+5. Send the invitation.
+
+The user receives an email to set up their account and will appear in the **Invites** view until they accept.
+
+## Org roles and elevated permissions
+
+Gallop uses a two‑tier permission model at the org level:
+
+- **Org role**
+  - **Admin** — Full access to all organization data and settings. Can manage users, configuration, integrations, and all projects.
+  - **Member** — Standard org membership. Access is governed by project assignments and any elevated permissions you grant.
+- **Elevated permissions for Members**
+  - **Project Management** — Default access to all projects at either a Contributor or Lead level.
+  - **Client Management** — Ability to create, edit, and delete client information across the organization.
+  - **Accounting Management** — Full accounting permissions across projects (when combined with Project Management).
+  - **Indirects Visibility** — Visibility into indirect costs such as contingencies, warranties, and commissions.
+  - **Catalogue Management** — Create, edit, and delete catalogue items, collections, and text entries.
+  - **Legal Management** — Manage standard terms of business within the Catalogue.
+  - **Template Management** — Administer templates for proposals, change orders, selections, and tasks.
+  - **Contract Management** — Admin‑level permissions on proposals and change orders across projects, including bypassing some template‑level restrictions.
+
+You typically grant elevated permissions either to specific senior individuals or at the **Group** level so many users inherit the same minimum access.
+
+## Groups
+
+Groups let you manage permissions for multiple users at once. Each group can have:
+
+- Its own set of **elevated permissions**.
+- Default project‑level access for members.
+- A descriptive name that matches your org structure (for example, "Project Managers", "Operations", "Accounting").
+
+When you grant an elevated permission to a group, every user in that group receives at least that level of access. You can still fine‑tune access for individuals when necessary.
+
+## Project roles and permission matrix
+
+On each project, users have a **Project role** and a set of module‑level permissions:
+
+- **Project roles**
+  - **Lead** — Higher default permissions, typically responsible for the job overall.
+  - **Support** — More restricted by default, often with view‑only access to sensitive financials and admin settings.
+
+For every project user, you can adjust permissions across a matrix of modules, including:
+
+- Project settings and details.
+- Warranty details.
+- Security details (for example, lockbox information).
+- Client financials (statements, schedules, allowance cost reports).
+- Accounting details (budgets, costs, forecasts, cost reports).
+- Proposals and change orders.
+- Selections.
+- Logs.
+- Schedule and briefings.
+- Files.
+- Requests (change and warranty).
+
+Each module can be completely hidden, visible as read‑only, or editable with admin‑level control. This lets you shape very specific access profiles for different roles.
+
+## User details
+
+Click on a user to see:
+
+- Contact information.
+- Org role and elevated permissions.
+- Groups they belong to.
+- Assigned projects and project roles (Lead or Support).
+- Recent activity (for example, proposals prepared or approvals given).
+
+## Editing and archiving users
+
+To update a user:
+
+1. Open the user profile.
+2. Modify their details, org role, groups, or elevated permissions.
+3. Save changes.
+
+When a team member leaves:
+
+1. Open the user profile.
+2. Click **Archive**.
+3. Confirm.
+
+<Tip>
+Archive rather than delete former users. This preserves project history, approvals, and audit trails while preventing new sign‑ins.
+</Tip>
+
+## Security best practices
+
+User management in Gallop supports:
+
+- Password and authentication policies.
+- Session management and access logs.
+- Fine‑grained permissions for sensitive financial and legal data.
+
+<Note>
+Review user and group access regularly. Remove or adjust access for team members who change roles or no longer need certain permissions.
+</Note>
